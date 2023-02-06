@@ -1,0 +1,17 @@
+import java.util.Scanner;
+
+public class LibraryHack {
+	public static void main(String[] args) {
+		Scanner inp = new Scanner(System.in);
+		System.out.println("Library Hack!!");
+		String options = "yes";
+
+		do {
+			System.out.println("Choose operator : \n1.Addition \n2.Subtraction \n3.Multiplication \n4.Division ");
+			int choice = inp.nextInt();
+			
+			System.out.println("Do you want to continue? type 'yes' or 'no'");
+			options = inp.next();
+		}while(options.equalsIgnoreCase("yes"));
+	}
+}

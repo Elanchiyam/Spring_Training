@@ -1,0 +1,46 @@
+import java.util.Scanner;
+
+public class LibraryHack {
+	public static void main(String[] args) {
+		Scanner inp = new Scanner(System.in);
+		System.out.println("Library Service!!");
+		String options = "yes";
+
+		do {
+			System.out.println("Choose Role : \n1.Admin \n2.Customer");
+			String choice = inp.next().toLowerCase();
+			
+			switch (choice) {
+			case "admin":
+				System.out.println("Choose Service : \n1.View All books \n2.Add New books \n3.Delete books");
+				int chooseAdminService = inp.nextInt();
+				adm
+				break;
+
+			case "customer":
+				System.out.println("Hi Admin");
+				break;
+
+			default:
+				System.out.println("Invalid Role!! Please choose valid role!!");
+				break;
+			}
+			
+			System.out.println("Do you want to continue? type 'yes' or 'no'");
+			options = inp.next();
+		}while(options.equalsIgnoreCase("yes"));
+		
+		System.out.println("Thank you!!");
+	}
+	
+	public static void adminService(int service) {
+		switch (service) {
+		case 1:
+			
+			break;
+
+		default:
+			break;
+		}
+	}
+}

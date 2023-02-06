@@ -1,0 +1,22 @@
+
+
+import java.util.List;
+
+public class Customer {
+	String customerName;
+	String address;
+	List<Book> borrowed;
+		
+	public Customer(String customerName, String address, List<Book> borrowed) {
+		super();
+		this.customerName = customerName;
+		this.address = address;
+		this.borrowed = borrowed;
+	}
+
+
+
+	void borrowBook(Book b) {
+		
+	}
+}

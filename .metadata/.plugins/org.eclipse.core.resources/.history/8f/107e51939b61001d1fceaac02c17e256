@@ -1,0 +1,70 @@
+package day4.exercise1;
+
+import java.util.Date;
+
+public class Customer {
+    private int custId;
+    private String name;
+    private String address;
+    private Date registrationDate;
+    private float registrationFees;
+    
+	public Customer(int custId, String name, String address, Date registrationDate, float registrationFees) {
+		super();
+		this.custId = custId;
+		this.name = name;
+		this.address = address;
+		this.registrationDate = registrationDate;
+		this.registrationFees = registrationFees;
+	}
+	
+	public int getCustId() {
+		return custId;
+	}
+
+	public void setCustId(int custId) {
+		this.custId = custId;
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public String getAddress() {
+		return address;
+	}
+
+	public void setAddress(String address) {
+		this.address = address;
+	}
+
+	public Date getRegistrationDate() {
+		return registrationDate;
+	}
+
+	public void setRegistrationDate(Date registrationDate) {
+		this.registrationDate = registrationDate;
+	}
+
+	public float getRegistrationFees() {
+		return registrationFees;
+	}
+
+	public void setRegistrationFees(float registrationFees) {
+		this.registrationFees = registrationFees;
+	}
+
+	@Override
+	public String toString() {
+		String str =  "Id : " + custId 
+				+ "\n Name : " + name 
+				+"\nAddress : " + (address.equals(null)? "Unknown" : address) 
+				+"\nRegistered on : " + (registrationDate.equals(null)?"Unkown" : registrationDate.getDate())+"/"+ registrationDate.getMonth() +"/" + registrationDate.getYear() ;
+		return str;
+	}
+    
+}

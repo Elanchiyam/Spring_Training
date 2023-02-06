@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
+		<item key="selection" value="arr"/>
+		<item key="wrap" value="true"/>
+		<item key="casesensitive" value="false"/>
+		<item key="wholeword" value="false"/>
+		<item key="incremental" value="false"/>
+		<item key="isRegEx" value="false"/>
+		<list key="findhistory">
+			<item value="mat"/>
+			<item value="sum"/>
+			<item value="java.sun.com/xml/ns/javaee"/>
+			<item value="java.sun.com/xml/ns/javaee&#x0A;&#x0A;"/>
+			<item value="http://java.sun.com/xml/ns/javaee&#x0A;&#x0A;"/>
+			<item value="&quot;http://java.sun.com/xml/ns/javaee&quot;&#x0A;&#x0A;"/>
+			<item value="edao"/>
+			<item value="notes"/>
+			<item value="system"/>
+			<item value="dataLineStr"/>
+			<item value="float"/>
+		</list>
+		<list key="replacehistory">
+			<item value="arr"/>
+			<item value="result"/>
+			<item value="Float"/>
+		</list>
+	</section>
+	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
+		<item key="DIALOG_X_ORIGIN" value="0"/>
+		<item key="DIALOG_Y_ORIGIN" value="0"/>
+		<item key="DIALOG_WIDTH" value="357"/>
+		<item key="DIALOG_HEIGHT" value="408"/>
+		<item key="DIALOG_FONT_NAME" value="1|Ubuntu|11.0|0|GTK|1|"/>
+	</section>
+</section>

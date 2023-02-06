@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		xmlns:context="http:www.springframework.org/schema/context"
+		xsi:schemaLocation="http://www.springframework.org/schema/beans
+		 http://www.springframework.org/schema/beans/spring-beans.xsd
+		 http://www.springframework.org/schema/context
+		 http://www.springframework.org/schema/context/spring-context.xsd">
+		
+		<!-- <!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN"
+			"https://www.springframework.org/dtd/spring-beans-2.0.dtd">
+	 -->
+<!-- SETTER INJECTION -->	
+<!--autowire - byType  -->		
+
+	<bean id="employee" class="com.global.beans.Employee" autowire="byName">
+		<property name="empId" value="101"></property>
+		<property name="ename" value="Siva"></property>
+		<property name="salary" value="80000"></property>
+		<property name="skillSet">
+			<list>
+				<value>Java</value>
+				<value>React Js</value>
+				<value>HTML</value>
+				<value>MySQL</value>
+			</list>
+		</property>
+		<property name="securityQuestion">
+			<map>
+				<entry key="What is your first name?" value="siva"/>
+				<entry key="Favourite Game" value = "Foot Ball" />
+			</map>
+		</property>
+		<!-- <property name="address" ref="address"></property> --> 
+	</bean>
+	
+	<bean id="address" class="com.global.beans.Address">
+		<property name="houseNumber" value="1951/32"></property>
+		<property name="street" value="Gandhipuram"></property>
+		<property name="city" value="Thanjavur"></property>
+		<property name="state" value="Tamilnadu"></property>
+	</bean>
+	
+	<!--CONSTRUCTOR INJECTION  -->
+	<bean id="employee1" class="com.global.beans.Employee">
+		<constructor-arg value="102" type="Integer"/>
+		<constructor-arg value="Elan" type="String"/>
+		<constructor-arg value="90000" type="Float"/>
+		
+	</bean>
+</beans>

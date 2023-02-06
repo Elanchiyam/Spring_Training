@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="MavenProjectWizardLocationPage">
+		<list key="location">
+			<item value="/home/anantharaman/eclipse-workspace/SpringMVCHackathon/pom.xml"/>
+			<item value="/home/anantharaman/eclipse-workspace/SpringWebHibernate"/>
+			<item value="/home/anantharaman/TRAINING/JAVA/JavaAssignments/KeepNote-Step3-Boilerplate/src/main/java/com/stackroute/keepnote/model/Category.java"/>
+			<item value="/home/anantharaman/TRAINING/JAVA/JavaAssignments/KeepNote-Step1-Boilerplate"/>
+			<item value="/home/anantharaman/eclipse-workspace/MVCHibernate"/>
+			<item value="/home/anantharaman/eclipse-workspace/springmvcHibernate"/>
+			<item value="/home/anantharaman/eclipse-workspace/DAO_JdbcTemplate"/>
+			<item value="/home/anantharaman/TRAINING/JAVA/JavaAssignments/DataMungerStep2_Boilerplate/src/com/stackroute/datamunger/query/parser"/>
+			<item value="/home/anantharaman/eclipse-workspace/DependencyInjection_XML"/>
+			<item value="/home/anantharaman/eclipse-workspace/iocexampleTest"/>
+			<item value="/home/anantharaman/TRAINING/assignment-solution-step1"/>
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+	</section>
+	<section name="MavenProjectWizardArchetypePage">
+		<item key="catalog" value="All Catalogs"/>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+	</section>
+	<section name="Maven2ProjectWizardArchifactPage">
+		<list key="package">
+			<item value="com.global"/>
+			<item value="com.global.SpringMVCHackathon"/>
+		</list>
+		<list key="groupId">
+			<item value="com.global"/>
+		</list>
+		<list key="artifactId">
+			<item value="SpringMVCHackathon"/>
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+		<list key="version">
+			<item value="0.0.1-SNAPSHOT"/>
+		</list>
+	</section>
+	<section name="MavenProjectWizardArtifactPage">
+		<list key="groupId">
+		</list>
+		<list key="name">
+		</list>
+		<list key="artifactId">
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+		<list key="version">
+			<item value="0.0.1-SNAPSHOT"/>
+		</list>
+	</section>
+	<section name="org.eclipse.m2e.core.ui.internal.wizards.CustomArchetypeDialog">
+	</section>
+	<section name="org.eclipse.m2e.core.pom.overview">
+	</section>
+	<section name="org.eclipse.m2e.core.pom.dependencies">
+	</section>
+	<section name="MavenProjectImportWizardPage">
+		<list key="rootDirectory">
+			<item value="/home/anantharaman/Downloads/user-service"/>
+			<item value="/home/anantharaman/Downloads/user-authentication"/>
+			<item value="/home/anantharaman/Downloads/gym-owner-service"/>
+			<item value="/home/anantharaman/TRAINING/JAVA/JavaAssignments/KeepNote-Step3-Boilerplate"/>
+			<item value="/home/anantharaman/TRAINING/JAVA/JavaAssignments/KeepNote-Step2-Boilerplate"/>
+			<item value="/home/anantharaman/Downloads/KeepNote123/KeepNote_Step3"/>
+			<item value="/home/anantharaman/Downloads/KeepNote123/KeepNote_Step2/KeepNote-Step2-Boilerplate"/>
+			<item value="/home/anantharaman/Downloads/KeepNote123/KeepNote_Step2"/>
+			<item value="/home/anantharaman/Downloads/KeepNote-Step2-Boilerplate-BK"/>
+			<item value="/home/anantharaman/Downloads/KeepNote-Step2-Boilerplate"/>
+			<item value="/home/anantharaman/TRAINING/JAVA/JavaAssignments/KeepNote-Step1-Boilerplate"/>
+			<item value="/home/anantharaman/TRAINING/JAVA/JavaAssignments/DataMungerStep2_Boilerplate"/>
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+	</section>
+	<section name="MavenModuleWizardParentPage">
+		<list key="moduleName">
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+	</section>
+	<section name="org.eclipse.m2e.core.ui.internal.dialogs.MavenRepositorySearchDialog">
+		<item key="width" value="480"/>
+		<item key="height" value="493"/>
+		<item key="x" value="20"/>
+		<item key="y" value="20"/>
+	</section>
+</section>

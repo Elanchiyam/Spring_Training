@@ -1,0 +1,50 @@
+package com.global.dao;
+
+import org.springframework.orm.hibernate5.HibernateTemplate;
+
+import com.global.model.Employee;
+
+public class EmployeeDAOImpl implements EmployeeDAO {
+
+	private HibernateTemplate hibernateTemplate;
+	
+	public HibernateTemplate getHibernateTemplate() {
+		return hibernateTemplate;
+	}
+
+	public void setHibernateTemplate(HibernateTemplate hibernateTemplate) {
+		this.hibernateTemplate = hibernateTemplate;
+	}
+
+	@Override
+	public void saveEmployee(Employee employee) {
+		// TODO Auto-generated method stub
+		Integer i = (Integer) hibernateTemplate.save(employee);
+		if(i==employee.getId())
+			System.out.println("Record is inserted");
+		else
+			System.out.println("Record is not inserted");
+	}
+
+	@Override
+	public void updateEmployee(Employee employee) {
+		// TODO Auto-generated method stub
+		Employee emp = findEmployeeById(employee.getId());
+		emp.setName(employee.getName());
+		emp.setSalary(emp.getSalary());
+		hibernateTemplate.update(emp);
+	}
+
+	@Override
+	public int deleteEmployee(Employee employee) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	public Employee findEmployeeById(Integer employeeId) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

@@ -1,0 +1,36 @@
+package com.global.controller;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestParam;
+
+import com.global.beans.Product;
+import com.global.beans.User;
+import com.global.dao.ShoppingCartDAOImpl;
+
+@Controller
+public class ShoppingCartController {
+
+	@Autowired
+	ShoppingCartDAOImpl shoppingCartDAOImpl;
+	
+	@PostMapping("/addUser")
+	public void addNewUser(@RequestBody User user) {
+		shoppingCartDAOImpl.saveUser(user);
+	}
+	
+	@GetMapping("/login/{emailId}/{password}")
+	public void loginUser(@PathVariable String emailId, @PathVariable String password) {
+			shoppingCartDAOImpl.loginUser(emailId, password);
+	}
+	
+	@PostMapping("/seller/addProduct")
+	public void addProduct(@RequestBody Product product) {
+		
+	}
+	
+}

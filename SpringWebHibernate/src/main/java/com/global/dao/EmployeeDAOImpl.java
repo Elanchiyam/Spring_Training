@@ -1,0 +1,61 @@
+package com.global.dao;
+
+import javax.transaction.Transactional;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.orm.hibernate5.HibernateTemplate;
+import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Repository;
+
+import com.global.model.Employee;
+
+@Transactional
+@Repository
+public class EmployeeDAOImpl implements EmployeeDAO {
+
+	private HibernateTemplate hibernateTemplate;
+	
+	public HibernateTemplate getHibernateTemplate() {
+		return hibernateTemplate;
+	}
+	@Autowired
+	public void setHibernateTemplate(HibernateTemplate hibernateTemplate) {
+		this.hibernateTemplate = hibernateTemplate;
+	}
+
+	@Override
+	public void saveEmployee(Employee employee) {
+		// TODO Auto-generated method stub
+		Integer i = (Integer) hibernateTemplate.save(employee);
+		if(i==employee.getId())
+			System.out.println("Record is inserted");
+		else
+			System.out.println("Record is not inserted");
+	}
+
+	@Override
+	public void updateEmployee(Employee employee) {
+		// TODO Auto-generated method stub
+		Employee emp = findEmployeeById(employee.getId());
+		emp.setName(employee.getName());
+		emp.setSalary(emp.getSalary());
+		hibernateTemplate.update(emp);
+	}
+
+	@Override
+	public void deleteEmployee(Integer id) {
+		// TODO Auto-generated method stub
+		hibernateTemplate.delete(findEmployeeById(id));
+	}
+
+	@Override
+	public Employee findEmployeeById(Integer employeeId) {
+		// TODO Auto-generated method stub
+		return hibernateTemplate.get(Employee.class, employeeId);
+	}
+	
+	public Employee getEmployee(int id) {
+		Employee emp = (Employee) hibernateTemplate.get(Employee.class,id);
+		return emp;
+	}
+}

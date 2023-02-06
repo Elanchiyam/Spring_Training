@@ -1,0 +1,47 @@
+package day4.exercise1;
+
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+import java.util.Scanner;
+
+public class Test {
+	public static void main(String[] args) {
+		Scanner inp = new Scanner(System.in);
+		System.out.println("Enter customer count : ");
+		int n = inp.nextInt();
+		Customer[] customers = new Customer[n];
+		for (int i = 0; i < n; i++) {
+			System.out.println("Enter Customer "+ i +"Details :");
+			System.out.print("Customer Id : ");
+			int custId = inp.nextInt();
+			System.out.print("Name : ");
+			String name = inp.next();
+			System.out.print("Address : ");
+			String address = inp.next();
+			System.out.println("Registration date : ");
+			String stringDate = inp.next();
+			Date date = new Date();
+			try {
+				date = new SimpleDateFormat("dd/MM/yyyy").parse(stringDate);
+			} catch (ParseException e) {
+				date = null;
+			}
+			System.out.println("Enter Registration fees");
+			float registrationfees = inp.nextFloat();
+			System.out.println(custId + name + address + stringDate + date  );
+			customers[i] = new Customer(custId, name, address, date, registrationfees);
+			
+		}
+		displayCustomerDetails(customers);
+	}
+	
+	public static void displayCustomerDetails(Customer[] customers) {
+		System.out.println(" ***************__Customer Details__**************");
+		for (Customer customer : customers) {
+			System.out.println(customer.toString());
+			System.out.println("-----------------------------------------------");
+		}
+		System.out.println("**************************************************");
+	}
+}

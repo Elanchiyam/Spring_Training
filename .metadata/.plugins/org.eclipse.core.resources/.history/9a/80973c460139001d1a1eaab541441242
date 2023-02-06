@@ -1,0 +1,6 @@
+package com.global;
+
+@org.springframework.stereotype.Controller
+public class HelloController {
+
+}

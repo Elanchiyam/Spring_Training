@@ -1,0 +1,13 @@
+import java.util.Scanner;
+
+public class LibraryHack {
+	public static void main(String[] args) {
+		Scanner in = new Scanner(System.in);
+		System.out.println("Library Service!!");
+		String Continue = "yes";
+
+		do {
+			
+		}while()
+	}
+}

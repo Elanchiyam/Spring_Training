@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Move element &apos;CsvQueryProcessor.java&apos; to &apos;Hibernate&apos;&#x0A;- Original project: &apos;DataMungerStep3&apos;&#x0A;- Destination element: &apos;Hibernate&apos;&#x0A;- Original element: &apos;com.stackroute.datamunger.reader.CsvQueryProcessor.java&apos;&#x0A;- Update references to refactored element" description="Move compilation unit" destination="=Hibernate" element1="/src=/optional=/true=/=/maven.pomderived=/true=/=/test=/true=/&lt;com.stackroute.datamunger.reader{CsvQueryProcessor.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.move" policy="org.eclipse.jdt.ui.moveResources" qualified="false" references="true" stamp="1663584639269" units="1" version="1.0"/>
+</session>

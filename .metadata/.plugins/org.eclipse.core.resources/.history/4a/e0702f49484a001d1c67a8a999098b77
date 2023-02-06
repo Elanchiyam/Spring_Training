@@ -1,0 +1,91 @@
+package com.global.beans;
+
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.Table;
+
+@Entity
+@Table
+public class Product {
+
+	@Id
+	@GeneratedValue(strategy = GenerationType.AUTO)
+	private Integer productId;
+	@Column
+	private String title;
+	@Column
+	private String catergory;
+	@Column
+	private String productDescription;
+	@Column
+	private String image;
+	@Column
+	private Float price;
+	
+	@JoinColumn(name = "userId")
+	private User user;
+	
+	public Integer getProductId() {
+		return productId;
+	}
+
+	public void setProductId(Integer productId) {
+		this.productId = productId;
+	}
+
+	public String getTitle() {
+		return title;
+	}
+
+	public void setTitle(String title) {
+		this.title = title;
+	}
+
+	public String getCatergory() {
+		return catergory;
+	}
+
+	public void setCatergory(String catergory) {
+		this.catergory = catergory;
+	}
+
+	public String getProductDescription() {
+		return productDescription;
+	}
+
+	public void setProductDescription(String productDescription) {
+		this.productDescription = productDescription;
+	}
+
+	public String getImage() {
+		return image;
+	}
+
+	public void setImage(String image) {
+		this.image = image;
+	}
+
+	public Float getPrice() {
+		return price;
+	}
+
+	public void setPrice(Float price) {
+		this.price = price;
+	}
+
+	public User getUser() {
+		return user;
+	}
+
+	public void setUser(User user) {
+		this.user = user;
+	}
+	
+	
+	
+
+}

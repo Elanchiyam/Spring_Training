@@ -1,0 +1,11 @@
+package day4.exercise1;
+
+import java.util.Date;
+
+public class Customer {
+    private int custId;
+    private String name;
+    private String address;
+    private Date registrationDate;
+    private float registrationFees;
+}

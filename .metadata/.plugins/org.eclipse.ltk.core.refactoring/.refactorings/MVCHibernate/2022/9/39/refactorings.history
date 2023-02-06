@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring accessors="true" comment="Delete 4 elements from project &apos;MVCHibernate&apos;&#x0A;- Original project: &apos;MVCHibernate&apos;&#x0A;- Original elements:&#x0A;     AddEmployee.jsp&#x0A;     DisplayEmployee.jsp&#x0A;     DisplayEmployee1.jsp&#x0A;     Home.jsp" description="Delete elements" element1="src/main/webapp/WEB-INF/AddEmployee.jsp" element2="src/main/webapp/WEB-INF/DisplayEmployee.jsp" element3="src/main/webapp/WEB-INF/DisplayEmployee1.jsp" element4="src/main/webapp/WEB-INF/Home.jsp" elements="0" flags="589830" id="org.eclipse.jdt.ui.delete" resources="4" stamp="1663757459770" subPackages="false" version="1.0"/>
+</session>

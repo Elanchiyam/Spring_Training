@@ -1,0 +1,26 @@
+package day4.exercise1;
+
+import java.util.Date;
+
+public class Customer {
+    private int custId;
+    private String name;
+    private String address;
+    private Date registrationDate;
+    private float registrationFees;
+	public Customer(int custId, String name, String address, Date registrationDate, float registrationFees) {
+		super();
+		this.custId = custId;
+		this.name = name;
+		this.address = address;
+		this.registrationDate = registrationDate;
+		this.registrationFees = registrationFees;
+	}
+	
+	@Override
+	public String toString() {
+		return "Customer [custId=" + custId + ", name=" + name + ", address=" + address + ", registrationDate="
+				+ registrationDate + ", registrationFees=" + registrationFees + "]";
+	}
+    
+}

@@ -1,0 +1,23 @@
+package day4.exercise1;
+
+import java.util.Scanner;
+
+public class Test {
+	public static void main(String[] args) {
+		Scanner inp = new Scanner(System.in);
+		int n = 5;
+		for (int i = 0; i < 5; i++) {
+			System.out.println("Enter Customer Details :");
+			System.out.print("Customer Id : ");
+			int custId = inp.nextInt();
+			System.out.print("Name : ");
+			String name = inp.next();
+			System.out.print("Address : ");
+			String address = inp.next();
+			System.out.println("Registration date : ");
+			Local
+			
+		}
+		
+	}
+}
